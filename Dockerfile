@@ -11,7 +11,7 @@ RUN ./nvim.appimage --appimage-extract
 RUN ln -s /squashfs-root/AppRun /usr/bin/nvim
 
 # Install latest Go.
-RUN wget https://go.dev/dl/go1.21.6.linux-amd64.tar.gz && tar -C /usr/local -xzpvf go1.21.6.linux-amd64.tar.gz
+RUN wget https://go.dev/dl/go1.22.1.linux-amd64.tar.gz && tar -C /usr/local -xzpvf go1.22.1.linux-amd64.tar.gz
 
 # Setup context.
 RUN useradd -ms /bin/bash user
