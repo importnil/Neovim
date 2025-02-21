@@ -22,7 +22,6 @@ require('mason-tool-installer').setup {
 
         -- Rust.
         { 'rust-analyzer' },
-        { 'rustfmt' },
 
         -- Frontend related.
         { 'eslint-lsp' },

@@ -51,16 +51,3 @@ vim.g.loaded_netrwPlugin = 1
 -- Blinking cursor.
 vim.opt.guicursor =
 'n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250,sm:block-blinkwait175-blinkoff150-blinkon175'
-
--- Clipboard.
-vim.g.clipboard = {
-    name = 'OSC 52',
-    copy = {
-        ['+'] = require('vim.ui.clipboard.osc52').copy('+'),
-        ['*'] = require('vim.ui.clipboard.osc52').copy('*'),
-    },
-    paste = {
-        ['+'] = require('vim.ui.clipboard.osc52').paste('+'),
-        ['*'] = require('vim.ui.clipboard.osc52').paste('*'),
-    },
-}
